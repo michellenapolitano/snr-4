@@ -1,0 +1,71 @@
+body {
+	background: black;
+}
+
+.lines {
+	max-width: 100%;
+	position: absolute;
+	mix-blend-mode: difference;
+		filter: invert(1);
+}
+
+.lines:hover {
+animation-iteration-count: infinite;
+cursor: crosshair;
+	opacity: 0.2;
+	mix-blend-mode: difference;
+	filter: invert(1);}
+
+.type {
+	color: white;
+	font-family: 'Judson', serif;
+	padding-top: 15vw;
+	padding-bottom: 15vw;
+	padding-left: 10vw;
+	padding-right: 10vw;
+	line-height: 2.0;
+	font-size: 25px;
+	font-weight: 4px;}
+
+.start {
+	top: 0;
+	font-size: 26px;
+	color: white;
+	text-align: right;
+	 font-style: italic;
+	  text-decoration: underline;
+	  position: absolute;
+	  right: 0;
+}
+
+.start:hover {
+	cursor: pointer;
+}
+
+a:link {
+  color: white;
+}
+
+a:visited {
+  color: white;
+}
+
+@media (max-width: 1000px) {
+body {
+	background: white;
+}
+  .lines {
+  transform: rotate(90deg);
+  object-fit: fill;
+	}
+	.type {
+	color: black;
+	font-family: 'Judson', serif;
+	padding-top: 15vw;
+	padding-bottom: 15vw;
+	padding-left: 10vw;
+	padding-right: 10vw;
+	line-height: 2.0;
+	font-size: 25px;
+	font-weight: 4px;
+}
